@@ -127,7 +127,7 @@ def main():
         # Add a mouse down event to look for clicking on the start color
 
         # Draw a guard
-        bounce_rect_between_two_positions(Rex_rect, (500,300), (520, 150), 200, frame_count)
+        bounce_rect_between_two_positions(Rex_rect, (440,300), (440, 150), 200, frame_count)
         screen.blit(Rex[frame_count%len(Rex)], Rex_rect)
 
         # Now check for the color under the cursor. Don't draw the cursor sprite yet or the
