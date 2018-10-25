@@ -126,7 +126,8 @@ def main():
             if event.type == pygame.QUIT:
                 is_alive = False
         # Add a mouse down event to look for clicking on the start color
-
+        if event.type == pygame.MOUSEBUTTONDOWN in (102, 255, 102, 255): 
+            start_timer +=1
         # Draw a guard
         bounce_rect_between_two_positions(Rex_rect, (440,300), (440, 150), 200, frame_count)
         screen.blit(Rex[frame_count%len(Rex)], Rex_rect)
@@ -148,7 +149,8 @@ def main():
         # Once you have the color at the cursor, check to see if you have gone off the path or if you have
         # touched the end color. You need to write code for this. The logic is that you need to see if the
         # level has been started, and then if it is touching something bad.
-
+        if color_at_cursor == (255,128,0,255) 
+            is_alive = False
 
         # Now move and draw the cursor sprite. Divide the frame_count by 10 to slow the cycle down.
         Long_Neck_rect.center = pygame.mouse.get_pos()
@@ -212,8 +214,6 @@ for count in game_time:
 
 def is_collided_with(self, Long_Neck):
     return self.rect.colliderect(Long_Neck.rect)
-#
-# ## Rotate Level
 #
 # while is_alive ==True:
 #     pygame.transform.rotate(window,90)
