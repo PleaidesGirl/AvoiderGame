@@ -62,7 +62,7 @@ def main():
     # Initialize pygame
     pygame.init()
 
-    map = pygame.image.load("AvoiderMap.png")
+    map = pygame.image.load("Map.png")
     # Store window width and height in different forms for easy access
     map_size = map.get_size()
     map_rect = map.get_rect()
