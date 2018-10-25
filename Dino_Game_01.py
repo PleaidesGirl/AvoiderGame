@@ -79,6 +79,7 @@ def main():
     Rex = load_piskell_sprite("Rex", 2)
     Rex_rect = Rex[0].get_rect()
 
+
     Long_Neck = load_piskell_sprite("LongNeckWalk",2)
     Long_Neck_rect = Long_Neck[0].get_rect()
 
@@ -208,6 +209,9 @@ for count in game_time:
     start_timer += 1
 '''
 # ## Traps
+
+def is_collided_with(self, Long_Neck):
+    return self.rect.colliderect(Long_Neck.rect)
 #
 # ## Rotate Level
 #
